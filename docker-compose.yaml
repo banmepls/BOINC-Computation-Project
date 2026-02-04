@@ -1,0 +1,51 @@
+services:
+  db:
+    image: mariadb:10.11
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass123
+      MYSQL_DATABASE: boinc
+      MYSQL_USER: boinc
+      MYSQL_PASSWORD: boincpass123
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "--protocol=tcp", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  apache:
+    image: php:8.2-apache-bookworm
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:80"               # → accesezi http://localhost:8080
+    volumes:
+      - .:/var/www/html
+      - uploads:/var/www/html/upload
+      - ./apache-fix.conf:/etc/apache2/conf-available/servername.conf
+    command: >
+      sh -c "a2enconf servername && apache2-foreground"
+    environment:
+      APACHE_DOCUMENT_ROOT: /var/www/html
+    working_dir: /var/www/html
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    depends_on:
+      - db
+      - apache
+    volumes:
+      - .:/project
+    working_dir: /project
+    command: tail -f /dev/null   # intri cu exec bash și rulezi script-urile manual
+
+volumes:
+  db_data:
+  uploads:

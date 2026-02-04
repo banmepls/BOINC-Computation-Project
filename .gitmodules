@@ -1,0 +1,3 @@
+[submodule "boinc_tutorial"]
+	path = boinc_tutorial
+	url = https://github.com/cherubimro/boinc_tutorial.git
