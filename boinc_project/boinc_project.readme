@@ -38,8 +38,8 @@ To start, show status, and stop the project, run:
     bin/stop
 
 The project's URLs are:
-Home page (and master URL): http://127.0.0.1/boinc_project/boinc_project/
-Administrative page:        http://127.0.0.1/boinc_project/boinc_project_ops/
+Home page (and master URL): http://apache/boinc_project/boinc_project/
+Administrative page:        http://apache/boinc_project/boinc_project_ops/
 
 ----------------------------
 

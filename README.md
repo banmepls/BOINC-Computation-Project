@@ -32,7 +32,7 @@ You're now inside the backend container. All following commands run here.
 
 ```bash
 apt update
-apt install -y dos2unix nlohmann-json3-dev libzip-dev git cmake build-essential libssl-dev
+apt install -y dos2unix nlohmann-json3-dev libzip-dev git cmake build-essential libssl-dev python3-mysqldb php-cli php-mysql lm-sensors
 ```
 
 ---
@@ -51,6 +51,7 @@ rm -f /usr/lib/python*/EXTERNALLY-MANAGED
 cd /project/boinc_tutorial/scripts/
 dos2unix *.sh
 chmod +x *.sh
+cd /project
 ```
 
 ---
@@ -131,12 +132,14 @@ EOF
 
 # Create the project
 export USER=root
-./make_project --url_base http://apache/boinc_project/ \
+yes | ./make_project --delete_prev_inst --drop_db_first \
+    --project_root /project/boinc_project \
+    --url_base http://apache/boinc_project/ \
     --db_host db \
     --db_user boincadm \
     --db_passwd boinc123 \
     --project_host localhost \
-    boinc_project /project/boinc_project
+    boinc_project
 ```
 
 ---

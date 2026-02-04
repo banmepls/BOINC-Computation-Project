@@ -6,9 +6,9 @@
         <db_name>boinc_project</db_name>
         <db_passwd>boinc123</db_passwd>
         <db_host>db</db_host>
-        <shmem_key>0x111116ec</shmem_key>
+        <shmem_key>0x11114830</shmem_key>
         <uldl_dir_fanout>1024</uldl_dir_fanout>
-        <host>127</host>
+        <host>localhost</host>
         <min_sendwork_interval>6</min_sendwork_interval>
         <max_wus_to_send>50</max_wus_to_send>
         <daily_result_quota>500</daily_result_quota>
@@ -27,14 +27,14 @@
         <dont_generate_upload_certificates>1</dont_generate_upload_certificates>
         <ignore_upload_certificates>1</ignore_upload_certificates>
         <enable_delete_account>0</enable_delete_account>
-        <master_url>http://apache/boinc_project/</master_url>
-        <download_url>http://apache/boinc_project/download</download_url>
-        <upload_url>http://apache/boinc_project_cgi/file_upload_handler</upload_url>
+        <master_url>http://apache/boinc_project/boinc_project/</master_url>
+        <download_url>http://apache/boinc_project/boinc_project/download</download_url>
+        <upload_url>http://apache/boinc_project/boinc_project_cgi/file_upload_handler</upload_url>
         <download_dir>/project/boinc_project/download</download_dir>
         <upload_dir>/project/boinc_project/upload</upload_dir>
         <key_dir>/project/boinc_project/keys/</key_dir>
         <app_dir>/project/boinc_project/apps</app_dir>
-        <log_dir>/project/boinc_project/log_127</log_dir>
+        <log_dir>/project/boinc_project/log_localhost</log_dir>
     </config>
     <tasks>
         <task>
