@@ -1,0 +1,47 @@
+04-Feb-2026 19:33:15 [---] cc_config.xml not found - using defaults
+04-Feb-2026 19:33:15 [---] Starting BOINC client version 8.3.0 for x86_64-pc-linux-gnu
+04-Feb-2026 19:33:15 [---] This a development version of BOINC and may not function properly
+04-Feb-2026 19:33:15 [---] log flags: file_xfer, sched_ops, task
+04-Feb-2026 19:33:15 [---] cURL libraries: libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10
+04-Feb-2026 19:33:15 [---] Running as a daemon
+04-Feb-2026 19:33:15 [---] Data directory: /project/boinc_test/clients/c1
+04-Feb-2026 19:33:16 [---] No usable GPUs found
+04-Feb-2026 19:33:16 [---] Creating new client state file
+04-Feb-2026 19:33:16 [---] Computer name: 040f8c2e513d
+04-Feb-2026 19:33:16 [---] Processor: 16 GenuineIntel 13th Gen Intel(R) Core(TM) i7-13620H [Family 6 Model 186 Stepping 2]
+04-Feb-2026 19:33:16 [---] Processor features: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities
+04-Feb-2026 19:33:16 [---] OS: Linux Ubuntu: Ubuntu 24.04.3 LTS [6.6.87.2-microsoft-standard-WSL2|libc 2.39]
+04-Feb-2026 19:33:16 [---] Memory: 7.57 GB physical, 2.00 GB virtual
+04-Feb-2026 19:33:16 [---] Disk: 476.11 GB total, 56.70 GB free
+04-Feb-2026 19:33:16 [---] Local time is UTC +0 hours
+04-Feb-2026 19:33:16 [---] Some projects require Docker; we recommend that you install it.
+04-Feb-2026 19:33:16 [---] See https://github.com/BOINC/boinc/wiki/Installing-Docker-on-Linux
+04-Feb-2026 19:33:16 [---] No general preferences found - using defaults
+04-Feb-2026 19:33:16 [---] Computing preferences:
+04-Feb-2026 19:33:16 [---] -  When computer is in use
+04-Feb-2026 19:33:16 [---] -     'In use' means mouse/keyboard input in last 3.00 minutes
+04-Feb-2026 19:33:16 [---] -     don't use GPU
+04-Feb-2026 19:33:16 [---] -     Use at most 100% of the CPU time
+04-Feb-2026 19:33:16 [---] -     suspend if non-BOINC CPU load exceeds 25%
+04-Feb-2026 19:33:16 [---] -     max memory usage: 3.79 GB
+04-Feb-2026 19:33:16 [---] -  When computer is not in use
+04-Feb-2026 19:33:16 [---] -     max CPUs used: 16
+04-Feb-2026 19:33:16 [---] -     Use at most 100% of the CPU time
+04-Feb-2026 19:33:16 [---] -     suspend if non-BOINC CPU load exceeds 50%
+04-Feb-2026 19:33:16 [---] -     max memory usage: 6.82 GB
+04-Feb-2026 19:33:16 [---] -  Suspend if running on batteries
+04-Feb-2026 19:33:16 [---] -  Store at least 0.10 days of work
+04-Feb-2026 19:33:16 [---] -  Store up to an additional 0.50 days of work
+04-Feb-2026 19:33:16 [---] -  max disk usage: 56.60 GB
+04-Feb-2026 19:33:16 [---] -  (to change preferences, visit a project web site or select 'Options / Computing preferences...' in the Manager)
+04-Feb-2026 19:33:16 [---] Setting up project and slot directories
+04-Feb-2026 19:33:16 [---] Checking active tasks
+04-Feb-2026 19:33:16 [---] Setting up GUI RPC socket
+04-Feb-2026 19:33:16 [---] Checking presence of 0 project files
+04-Feb-2026 19:33:16 [---] This computer is not attached to any projects
+04-Feb-2026 19:33:16 [---] Running CPU benchmarks
+04-Feb-2026 19:33:16 [---] Suspending computation - CPU benchmarks in progress
+04-Feb-2026 19:33:48 [---] Benchmark results:
+04-Feb-2026 19:33:48 [---] Number of CPUs: 16
+04-Feb-2026 19:33:48 [---] 2810 floating point MIPS (Whetstone) per CPU
+04-Feb-2026 19:33:48 [---] 8118 integer MIPS (Dhrystone) per CPU

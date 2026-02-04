@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<br />
+<b>Fatal error</b>:  Uncaught Error: Class &quot;mysqli&quot; not found in /var/www/html/boinc_test/projects/pi_test/html/inc/db_conn.inc:37
+Stack trace:
+#0 /var/www/html/boinc_test/projects/pi_test/html/inc/boinc_db.inc(84): DbConn-&gt;init_conn('boincadm', 'boinc123', 'db', 'pi_test')
+#1 /var/www/html/boinc_test/projects/pi_test/html/inc/boinc_db.inc(120): BoincDb::get_aux(0)
+#2 /var/www/html/boinc_test/projects/pi_test/html/inc/xml.inc(28): BoincDb::get()
+#3 /var/www/html/boinc_test/projects/pi_test/html/user/create_account.php(32): db_init_xml()
+#4 {main}
+  thrown in <b>/var/www/html/boinc_test/projects/pi_test/html/inc/db_conn.inc</b> on line <b>37</b><br />

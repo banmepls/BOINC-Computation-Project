@@ -1,0 +1,53 @@
+======================================================================
+BOINC Tutorial - Complete Server Setup
+======================================================================
+Setting up MySQL database...
+Creating project structure...
+Creating project 'boinc_project' (short name 'boinc_project'):
+   PROJECT_ROOT = /project/boinc_project/
+   PROJECT_HOST = 127
+       URL_BASE = http://127.0.0.1/boinc_project/
+  HTML_USER_URL = http://127.0.0.1/boinc_project/boinc_project/
+   HTML_OPS_URL = http://127.0.0.1/boinc_project/boinc_project_ops/
+        KEY_DIR = /project/boinc_project/keys/
+        DB_NAME = boinc_project
+        DB_HOST = db
+
+Delete /project/boinc_project/? [y/N] Deleting /project/boinc_project/
+
+Continue? [Y/n] Creating directories
+Generating encryption keys
+Copying files
+Setting up database
+Writing config files
+Linking CGI programs
+update_translations finished
+Done installing default daemons.
+
+Done creating project.  Please view
+/project/boinc_project/boinc_project.readme
+for important additional instructions.
+
+Building applications...
+rm -f *.o pi_compute axb_compute euler_compute collatz_search generate_keys
+rm -f checkpoint.txt out in
+Compiling pi_compute.cpp...
+g++ -Wall -O2 -I/root/boinc_source -I/root/boinc_source/api -I/root/boinc_source/lib -I/root/boinc_source/zip -I/usr/local/include/SEAL-4.1 -std=c++17 -c pi_compute.cpp -o pi_compute.o
+Compiling Axb-MonteCarlo.cpp...
+g++ -Wall -O2 -I/root/boinc_source -I/root/boinc_source/api -I/root/boinc_source/lib -I/root/boinc_source/zip -I/usr/local/include/SEAL-4.1 -std=c++17 -c Axb-MonteCarlo.cpp -o Axb-MonteCarlo.o
+Compiling euler_compute.cpp...
+g++ -Wall -O2 -I/root/boinc_source -I/root/boinc_source/api -I/root/boinc_source/lib -I/root/boinc_source/zip -I/usr/local/include/SEAL-4.1 -std=c++17 -c euler_compute.cpp -o euler_compute.o
+Compiling collatz_search.cpp...
+g++ -Wall -O2 -I/root/boinc_source -I/root/boinc_source/api -I/root/boinc_source/lib -I/root/boinc_source/zip -I/usr/local/include/SEAL-4.1 -std=c++17 -c collatz_search.cpp -o collatz_search.o
+Compiling generate_keys.cpp...
+g++ -Wall -O2 -I/root/boinc_source -I/root/boinc_source/api -I/root/boinc_source/lib -I/root/boinc_source/zip -I/usr/local/include/SEAL-4.1 -std=c++17 -c generate_keys.cpp -o generate_keys.o
+Linking axb_compute...
+g++ -L/root/boinc_source/api -L/root/boinc_source/lib -L/usr/lib -L/usr/local/lib -o axb_compute Axb-MonteCarlo.o -lboinc_api -lboinc -lpthread -lm /usr/local/lib/libseal.a
+/usr/bin/ld: cannot find /usr/local/lib/libseal.a: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:56: axb_compute] Error 1
+make: *** Waiting for unfinished jobs....
+euler_compute.cpp: In function 'void init_seed()':
+euler_compute.cpp:85:14: warning: ignoring return value of 'size_t fread(void*, size_t, size_t, FILE*)' declared with attribute 'warn_unused_result' [-Wunused-result]
+   85 |         fread(&checkpoint_data.random_seed, sizeof(checkpoint_data.random_seed), 1, urandom);
+      |         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

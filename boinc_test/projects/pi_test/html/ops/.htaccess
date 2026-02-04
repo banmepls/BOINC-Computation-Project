@@ -1,0 +1,5 @@
+
+AuthName "pi_test"
+AuthType Basic
+AuthUserFile /project/boinc_test/projects/pi_test//html/ops/.htpasswd
+require valid-user

@@ -1,0 +1,5 @@
+
+AuthName "boinc_project"
+AuthType Basic
+AuthUserFile /project/boinc_project//html/ops/.htpasswd
+require valid-user

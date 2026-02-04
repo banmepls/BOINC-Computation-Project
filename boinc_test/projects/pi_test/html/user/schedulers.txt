@@ -1,0 +1,4 @@
+
+<!-- <scheduler>http://localhost:8080/pi_test/pi_test_cgi/cgi</scheduler> -->
+<link rel="boinc_scheduler" href="http://localhost:8080/pi_test/pi_test_cgi/cgi">
+        
