@@ -1,0 +1,11 @@
+<workunit>
+    <name>catalan_wu_1</name>
+    <app_name>catalan</app_name>
+    <iterations>1000000</iterations>
+    <formula>G = Σ(-1)^k/(2k+1)^2 for k=0 to 1000000</formula>
+    <flops_estimate>500000000</flops_estimate>
+    <description>Calculate Catalan constant G using alternating series with n=1,000,000</description>
+    <expected_g>0.915965594177219</expected_g>
+    <method>alternating_series</method>
+    <created>Thu Feb  5 05:00:00 UTC 2026</created>
+</workunit>

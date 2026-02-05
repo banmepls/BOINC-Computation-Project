@@ -1,0 +1,20 @@
+=== LOG EXECUTIE CLIENT ===
+Client ID: BOINC_Client_''
+Work Unit: pi_wu_''
+Start Time: 
+End Time: 
+
+PROGRES:
+[00:00] Descarcare work unit... DONE
+[00:05] Initializare aplicatie... DONE
+[00:''] Calcul Pi ('' iteratii)... DONE
+[00:''] Salvare rezultat... DONE
+[00:''] Upload server... DONE
+
+RESURSE:
+- CPU Usage: 95-100%
+- Memory: 50 MB
+- Disk: 10 MB
+- Network: 1.2 MB uploaded
+
+STATUS: COMPLETAT CU SUCCES

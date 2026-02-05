@@ -1,0 +1,20 @@
+=== REZULTAT CALCUL PI ===
+Work Unit: pi_wu_''
+Client: BOINC_Client_''
+Data: 02/05/2026 05:20:15
+
+PARAMETRI:
+- Iteratii: ''
+- Metoda: Monte Carlo
+- Seed: 
+
+REZULTAT:
+Pi = 3.14159 (varianta client '')
+Eroare: 0.0001
+
+TIMPI:
+- Calcul: '.5 secunde'
+- Upload: 0.3 secunde
+- Total: '.8 secunde'
+
+STATUS: SUCCESS

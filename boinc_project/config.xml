@@ -6,7 +6,7 @@
         <db_name>boinc_project</db_name>
         <db_passwd>boinc123</db_passwd>
         <db_host>db</db_host>
-        <shmem_key>0x11114830</shmem_key>
+        <shmem_key>0x111152b0</shmem_key>
         <uldl_dir_fanout>1024</uldl_dir_fanout>
         <host>localhost</host>
         <min_sendwork_interval>6</min_sendwork_interval>
@@ -104,15 +104,18 @@
             <disabled>0</disabled>
         </task>
     </tasks>
-    <daemons>
-        <daemon>
-            <cmd>feeder -d 3 </cmd>
-        </daemon>
-        <daemon>
-            <cmd>transitioner -d 3 </cmd>
-        </daemon>
-        <daemon>
-            <cmd>file_deleter -d 3 </cmd>
-        </daemon>
-    </daemons>
+	<daemons>
+	    <daemon>
+	        <cmd>sample_trivial_validator --daemon</cmd>
+	        <host>backend</host>
+	    </daemon>
+	    <daemon>
+	        <cmd>sample_assimilator --daemon</cmd>
+	        <host>backend</host>
+	    </daemon>
+	    <daemon>
+	        <cmd>feeder --daemon</cmd>
+	        <host>backend</host>
+	    </daemon>
+	</daemons>
 </boinc>

@@ -1,0 +1,20 @@
+<boinc_upload>
+  <header>
+    <workunit_id>''</workunit_id>
+    <workunit_name>pi_wu_''</workunit_name>
+    <client_id>client_00''</client_id>
+    <timestamp></timestamp>
+  </header>
+  <result>
+    <pi_value>3.14159 (client '')</pi_value>
+    <iterations>''</iterations>
+    <cpu_time>''</cpu_time>
+    <memory_used>52428800</memory_used>
+    <exit_code>0</exit_code>
+  </result>
+  <validation>
+    <status>pending</status>
+    <quorum>2</quorum>
+    <received>1</received>
+  </validation>
+</boinc_upload>

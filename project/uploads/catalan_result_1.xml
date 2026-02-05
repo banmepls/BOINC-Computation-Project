@@ -1,0 +1,13 @@
+<catalan_result>
+    <workunit_name>catalan_wu_1</workunit_name>
+    <iterations>1000000</iterations>
+    <catalan_series>0.915965594177361</catalan_series>
+    <catalan_integral>0.915964701478133</catalan_integral>
+    <catalan_reference>0.915965594177219</catalan_reference>
+    <error_series>+1.42e-13</error_series>
+    <error_integral>-8.926992869e-07</error_integral>
+    <internal_error>8.926992284274959e-07</internal_error>
+    <method>series_and_integral</method>
+    <computation_time>1.5s</computation_time>
+    <timestamp>Thu Feb  5 05:30:00 UTC 2026</timestamp>
+</catalan_result>
