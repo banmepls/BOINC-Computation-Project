@@ -1,0 +1,8 @@
+Catalan Constant Calculation Results:
+=====================================
+Series method: 0.000000000000000
+Integral method: 0.000000000000000
+Average: 0.000000000000000
+Theoretical value: 0.915965594177219
+Error (vs theoretical): 9.159655941772190e-01
+Internal error estimate: 0.000000000000000e+00

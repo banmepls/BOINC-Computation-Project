@@ -1,3 +1,12 @@
 boinc_project/bin/boinc_results/
 boinc_project/bin/
 slots/
+boinc_results/
+boinc_project/bin/
+slots/
+boinc_results/
+boinc_project/bin/
+drupal/sites/default/modules/boinc/
+drupal/sites/default/themes/boinc/
+results/
+**/__pycache__/
