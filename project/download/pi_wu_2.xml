@@ -1,0 +1,7 @@
+<workunit>
+    <name>pi_wu_2</name>
+    <iterations>2000000</iterations>
+    <rsc_fpops_est>200000000</rsc_fpops_est>
+    <app_name>pi</app_name>
+    <created>Thu Feb  5 03:36:07 UTC 2026</created>
+</workunit>
