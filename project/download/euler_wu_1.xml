@@ -1,0 +1,11 @@
+<workunit>
+    <name>euler_wu_1</name>
+    <app_name>euler</app_name>
+    <iterations>1000000</iterations>
+    <formula>e = (1 + 1/1000000)^1000000</formula>
+    <flops_estimate>100000000</flops_estimate>
+    <description>Calculate Euler's constant e using limit formula with n=1,000,000</description>
+    <expected_e>2.718281828459045</expected_e>
+    <method>limit_formula</method>
+    <created>$(date)</created>
+</workunit>

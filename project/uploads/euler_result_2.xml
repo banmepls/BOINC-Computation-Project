@@ -1,0 +1,12 @@
+<euler_result>
+    <workunit_name>euler_wu_2</workunit_name>
+    <iterations>10000000</iterations>
+    <e_limit>2.718281694132081</e_limit>
+    <e_series>2.718281828459045</e_series>
+    <e_reference>2.718281828459045</e_reference>
+    <error_limit>1.34327064e-07</error_limit>
+    <error_series>0.000000000e+00</error_series>
+    <method>limit_and_series</method>
+    <computation_time>2.1s</computation_time>
+    <timestamp>Thu Feb  5 04:17:00 UTC 2026</timestamp>
+</euler_result>
